@@ -240,7 +240,7 @@
 
   <div class="container" id="card">
     <div class="heart"></div>
-    <h1>Hi Rishwi ❤️</h1>
+    <h1>Hi Baby ❤️</h1>
     <p class="subtitle">I, Akshay, have something very very serious to ask you…</p>
     <p class="question">Will you be my <strong>forever</strong> Valentine?</p>
 
@@ -250,7 +250,7 @@
     </div>
 
     <p class="message" id="msg"></p>
-    <p class="footer-note">P.S. Saying “No” may cause cuteness overload and magical button growth.</p>
+    <p class="footer-note">P.S. Saying “No” may cause cuteness overload.</p>
   </div>
 
   <canvas id="confetti-canvas" style="position: fixed; inset: 0; pointer-events: none; z-index: 2;"></canvas>
@@ -258,14 +258,14 @@
   <script>
     // Floating hearts in the background
     const overlay = document.querySelector(".overlay");
-    const heartCount = 18;
+    const heartCount = 50;
 
     for (let i = 0; i < heartCount; i++) {
       const h = document.createElement("div");
       h.className = "heart-float";
       const startLeft = Math.random() * 100;
       const delay = Math.random() * -10;
-      const duration = 8 + Math.random() * 8;
+      const duration = 10 + Math.random() * 8;
       const scale = 0.45 + Math.random() * 0.8;
 
       h.style.left = startLeft + "vw";
@@ -287,11 +287,10 @@
       "Rude. But also… try reading the question again. 💌",
       "Incorrect. Please consult your heart and retry. ❤️",
       "System error: ‘No’ is not a valid response for this question. 🤖",
-      "Wow. Just wow. Luckily, Akshay is very patient. 😌",
-      "Every ‘No’ makes the ‘Yes’ stronger. Just saying. 😉",
-      "Breaking news: Scientists recommend choosing ‘Yes’ immediately. 🧪",
-      "Akshay already told everyone you said ‘Yes’… don’t make him a liar. 😆",
+      "Wow. Just wow. Luckily, I am very patient. 😌",
+      "I already told everyone you said ‘Yes’… don’t make me a liar. 😆",
       "At this point, the only option is ‘Yes’. Resistance is adorable but useless. 💕"
+      "Breaking news: Scientists recommended choosing ‘Yes’ immediately. 🧪"
     ];
 
     function getNoMessage() {
@@ -302,8 +301,8 @@
     noBtn.addEventListener("click", () => {
       noClicks++;
 
-      const noScale = Math.max(0.3, 1 - noClicks * 0.1);
-      const yesScale = 1 + noClicks * 0.15;
+      const noScale = Math.max(0.5, 1 - noClicks * 0.1);
+      const yesScale = 0.75 + noClicks * 0.15;
 
       noBtn.style.transform = "scale(" + noScale + ")";
       yesBtn.style.transform = "scale(" + yesScale + ")";
@@ -312,7 +311,7 @@
       yesBtn.style.fontSize = Math.min(1.4, 1 + noClicks * 0.05) + "rem";
 
       msg.textContent = getNoMessage();
-      noBtn.textContent = "Still no? 😂";
+      noBtn.textContent = "Still no?, Unbelievable 😂";
 
       if (noScale <= 0.35) {
         noBtn.disabled = true;
@@ -321,7 +320,7 @@
     });
 
     yesBtn.addEventListener("click", () => {
-      msg.textContent = "Yaaay! Rishwi is officially Akshay’s forever Valentine! 💖";
+      msg.textContent = "Yaaay! You are stuck with me forever now! 💖";
       yesBtn.textContent = "Forever & ever 💍";
       noBtn.style.display = "none";
 
@@ -334,7 +333,7 @@
         gravity: 0.2,
         decay: 0.94,
         origin: { y: 0.15 },
-        particleCount: 150,
+        particleCount: 300,
         colors: ["#ff0a54", "#ff492c", "#ff7433", "#ff9f40", "#ffc300", "#34e89e", "#0f3443"]
       };
 
@@ -349,7 +348,7 @@
           color: ["#ff0a54", "#ff492c", "#ff7433"]
         });
         confetti({
-          particleCount: 120,
+          particleCount: 160,
           spread: 180,
           origin: { y: 0.42, x: 0.85 },
           gravity: 0.3,
