@@ -1,20 +1,11 @@
-# 🎀 Akshay & Rishwi Forever Valentine 💕
+
 
 *Hi Rishwi!*  
-Akshay made this special page just for you ❤️
+I made this special web page just for you to let you know how special your are to me !!❤️
 
-## 🎯 Play the Valentine Game
-- [Open Valentine Page](valentine.html)
-- Click "No" → watch the magic happen 😏  
-- Click "Yes" → fireworks + confetti! 🎆✨
+Well I have a a very specific question I would like to ask you
+[Click here if you are curious to know the question](valentine.html)
+Absolutely no pressure  🎆✨
 
-## 📱 Mobile Friendly
-Works perfectly on iPhone, Android, tablets, desktop.
+*Made with lots of love ❤️ by Akshay for Rishwi*  
 
-## 🔗 Live Demo
-https://akshayalok5-ux.github.io/akshay-rishwi-valentine/valentine.html
-
----
-
-*Made with ❤️ by Akshay for Rishwi*  
-Forever Valentine Proposal - February 2026
